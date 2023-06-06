@@ -29,3 +29,12 @@ NOTE: This is assuming that both the apis will be published in the organization 
 
 ## Custom Policies (user-defined policies)  
 https://github.com/ibmArtifacts/custom-jwt-invoke  
+
+# Other reusable objects on APIC  
+There are resources that may be created to be used throughout the APIs. Some of those are described in this section.  
+## User Registries
+
+## TLS  
+
+## OAuth providers  
+
