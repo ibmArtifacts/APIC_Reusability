@@ -18,7 +18,7 @@ The sample api dynamic-basic-auth extracts the http header basic auth credential
 ![image](https://github.com/ibmArtifacts/APIC_Reusability/assets/66093865/73d3eede-4fca-456d-8a8e-ae7bb3886a0b)  
   
 ## Reusing developed API code policies (copying and pasting)  
-One way to reuse policy flows is simply copying and pasting the snippet of code from the assembly > execute section of the yaml of the api.
+One way to reuse policy flows is simply copying and pasting the snippet of code from the assembly -> execute section of the yaml of the api.
 For example, from the sample api, you will find lines 16 to 29 make up the gatewayscript policy containing the logic of this gateway policy:  
 ![image](https://github.com/ibmArtifacts/APIC_Reusability/assets/66093865/6748ef31-90ac-411d-8199-8f4f91e973e3)  
 This code may be copied and placed in another APIC API assembly > execute section to be used in another api.  
@@ -26,7 +26,8 @@ This code may be copied and placed in another APIC API assembly > execute sectio
 ## Reusing already developed APIs as micro services  
 If an api already provides the result of a function you require, then you may call that api rather than copying the same logic over to the api you are working on.  
 For example, if the sample api response is something required in another api, an Invoke Policy may be used to call the sample API with the following endpoint: ` https://127.0.0.1:9443/$(api.org.name)/$(api.catalog.name)/dynamic-basic-auth/  `
-NOTE: This is assuming that both the apis will be published in the organization and catalog, which the `$(api.org.name)` and `$(api.catalog.name)` designates the current runtime environment where the API is being invoked from.  ![image](https://github.com/ibmArtifacts/APIC_Reusability/assets/66093865/fdd5cbc0-8325-4b7c-b08f-2fd648f386dc)  
+NOTE: This is assuming that both the apis will be published in the organization and catalog, which the `$(api.org.name)` and `$(api.catalog.name)` designates the current runtime environment where the API is being invoked from.  
+![image](https://github.com/ibmArtifacts/APIC_Reusability/assets/66093865/fdd5cbc0-8325-4b7c-b08f-2fd648f386dc)  
 
 ## Custom Policies (user-defined policies)  
 https://github.com/ibmArtifacts/custom-jwt-invoke  
@@ -34,8 +35,18 @@ https://github.com/ibmArtifacts/custom-jwt-invoke
 # Other reusable objects on APIC  
 There are resources that may be created to be used throughout the APIs. Some of those are described in this section.  
 ## User Registries
+More details about User Registries may be found in the [IBM APIC Documentation: User registries overview](https://www.ibm.com/docs/en/api-connect/10.0.5.x_lts?topic=security-user-registries-overview).  
+The user registries may be found in the Resources section of both the Cloud Manager (CM) and API Manager (APIM).
+![image](https://github.com/ibmArtifacts/APIC_Reusability/assets/66093865/4fc51359-1100-468c-8eed-9e49ccff4aeb)  
+
+User registries may be configured in the CM and/or APIM. The difference is:
+- CM based configurations are managed by CM authorized users like operational or system admin teams. The user registries visibility may be set to APIM.
+- APIM based configurations are managed by the provider API development teams.
+
+
 
 ## TLS  
+
 
 ## OAuth providers  
 
