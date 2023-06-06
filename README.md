@@ -34,14 +34,30 @@ https://github.com/ibmArtifacts/custom-jwt-invoke
 
 # Other reusable objects on APIC  
 There are resources that may be created to be used throughout the APIs. Some of those are described in this section.  
-## User Registries
+## User Registries  
 More details about User Registries may be found in the [IBM APIC Documentation: User registries overview](https://www.ibm.com/docs/en/api-connect/10.0.5.x_lts?topic=security-user-registries-overview).  
-The user registries may be found in the Resources section of both the Cloud Manager (CM) and API Manager (APIM).
+The user registries may be found in the Resources section of both the Cloud Manager (CM) and API Manager (APIM).  
 ![image](https://github.com/ibmArtifacts/APIC_Reusability/assets/66093865/4fc51359-1100-468c-8eed-9e49ccff4aeb)  
 
-User registries may be configured in the CM and/or APIM. The difference is:
-- CM based configurations are managed by CM authorized users like operational or system admin teams. The user registries visibility may be set to APIM.
-- APIM based configurations are managed by the provider API development teams.
+User registries may be configured in the CM and/or APIM. The difference is:  
+- CM based configurations are managed by CM authorized users like operational or system admin teams. The user registries visibility may be set to APIM.  
+- APIM based configurations are managed by the provider API development teams.  
+
+The user registry may be used in many places, but most cases will be for the following:  
+
+- Local registries will be used for CM, APIM, and consumer organization logins.  
+![image](https://github.com/ibmArtifacts/APIC_Reusability/assets/66093865/1ca40621-9fd4-4e20-ad0a-612de9fd7f0d)  
+![image](https://github.com/ibmArtifacts/APIC_Reusability/assets/66093865/e8d193cf-dd1e-47d2-a838-bf95879fb44e)  
+
+- Authentication URL, LDAP and OIDC are used as a part of the security schema for either Basic Auth or OAuth 2.0.  
+  - Authorization URL or LDAP is configured within the OAuth Object first:  
+![image](https://github.com/ibmArtifacts/APIC_Reusability/assets/66093865/595fcf2f-af1b-4c02-a4f8-8501bbf48320)  
+  - 
+
+
+
+
+
 
 
 
