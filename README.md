@@ -52,17 +52,27 @@ The user registry may be used in many places, but most cases will be for the fol
 - Authentication URL, LDAP and OIDC are used as a part of the security schema for either Basic Auth or OAuth 2.0.  
   - Authorization URL or LDAP is configured within the OAuth Object first:  
 ![image](https://github.com/ibmArtifacts/APIC_Reusability/assets/66093865/595fcf2f-af1b-4c02-a4f8-8501bbf48320)  
-  - 
-
-
-
-
-
-
-
+  - Authorization URL and/or LDAP may be used for each API per resource set at the top level of the APIM:
+![image](https://github.com/ibmArtifacts/APIC_Reusability/assets/66093865/14dab9e9-076b-4f52-9552-3aa8a09873e4)  
 
 ## TLS  
+More details about TLS profiles may be found in the [IBM APIC Doumentation: TLS profiles overview](https://www.ibm.com/docs/en/api-connect/10.0.5.x_lts?topic=security-tls-profiles-overview).  
 
+Like the User resgitries, the TLS profile may be configured in the CM or the APIM (not TLS Server profiles), similarly, the TLS profiles in the CM are managed by operation team or admin teams, where TLS Client Profiles in the APIM section are managed by the provider API development teams.  
+![image](https://github.com/ibmArtifacts/APIC_Reusability/assets/66093865/31b715a1-f976-4786-8be9-516f244a26cb)  
 
 ## OAuth providers  
+More details about OAuth providers may be found in the [IBM APIC Documentation: OAuth Provider overview](https://www.ibm.com/docs/en/api-connect/10.0.5.x_lts?topic=security-oauth-provider-overview).  
+
+Like the User registries and TLS Client Profiles, the OAuth may be configured in the CM or the APIM.  
+This is an object that is created in the resource to be used or reused per API.  
+
+![image](https://github.com/ibmArtifacts/APIC_Reusability/assets/66093865/3312f5a0-e36d-4399-a12f-fea837589071)  
+
+
+  
+
+
+
+
 
