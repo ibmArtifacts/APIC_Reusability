@@ -8,7 +8,7 @@ Some api code reuse are as follows, but not limited to:
 ## Sample Service
 The sample service is the API we'll be using for this document.
 The following ([dynamic-basic-auth.yaml](https://github.com/ibmArtifacts/APIC_Reusability/blob/main/dynamic-basic-auth.yaml)) is a basic API which contains an APIC Gatewayscript policy and an Invoke policy for the purpose of using the consumer's username and password via basic authorization http header for the backend service to authenticate/validate the consumer, thus this api is called "dynamic-basic-auth" since the basic will not be static for the backend call.  
-![image](https://github.com/ibmArtifacts/APIC_Reusability/assets/66093865/50fd8623-0588-4bc7-a272-6194a6f48ebf)  
+![image](https://github.com/ibmArtifacts/APIC_Reusability/assets/66093865/c13a7d96-efa2-48e5-9b1f-d30872cee67e)  
 We will be using this as a sample service for this document.  
 NOTE: The Invoke policy contains a test url, which you should change to your own test url.  
 The current Invoke policy uses a https://www.mockable.io/ servuce, which is a good public api mock service where you may create a quick loopback service for the dynamic-basic-auth api to invoke.
