@@ -30,7 +30,12 @@ NOTE: This is assuming that both the apis will be published in the organization 
 ![image](https://github.com/ibmArtifacts/APIC_Reusability/assets/66093865/fa7d99fe-2381-41f3-a78b-224c9228c8d0)  
 
 ## Custom Policies (user-defined policies)  
-https://github.com/ibmArtifacts/custom-jwt-invoke  
+Another concept of reusability are to create a [User-Defined Policy](https://www.ibm.com/docs/en/api-connect/10.0.5.x_lts?topic=constructs-user-defined-policies) (or custom policy), which are packaged policies to handle certain general processing of the request or response.  
+The [dynamic-basic-auth-udp.zip](https://github.com/ibmArtifacts/APIC_Reusability/blob/main/dynamic-basic-auth-udp.zip) contains the extracted policies from the sample API [dynamic-basic-auth.yaml](https://github.com/ibmArtifacts/APIC_Reusability/blob/main/dynamic-basic-auth.yaml). The code for the udp, may been review from the [dynamic-basic-auth-udp.yaml](https://github.com/ibmArtifacts/APIC_Reusability/blob/main/dynamic-basic-auth-udp.yaml).  
+
+
+Here is another sample UDP: https://github.com/ibmArtifacts/custom-jwt-invoke  
+
 
 # Other reusable objects on APIC  
 There are resources that may be created to be used throughout the APIs. Some of those are described in this section.  
