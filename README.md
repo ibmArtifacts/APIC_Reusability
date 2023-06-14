@@ -32,7 +32,13 @@ NOTE: This is assuming that both the apis will be published in the organization 
 ## Custom Policies (user-defined policies)  
 Another concept of reusability are to create a [User-Defined Policy](https://www.ibm.com/docs/en/api-connect/10.0.5.x_lts?topic=constructs-user-defined-policies) (or custom policy), which are packaged policies to handle certain general processing of the request or response.  
 The [dynamic-basic-auth-udp.zip](https://github.com/ibmArtifacts/APIC_Reusability/blob/main/dynamic-basic-auth-udp.zip) contains the extracted policies from the sample API [dynamic-basic-auth.yaml](https://github.com/ibmArtifacts/APIC_Reusability/blob/main/dynamic-basic-auth.yaml). The code for the udp may be reviewed from the [dynamic-basic-auth-udp.yaml](https://github.com/ibmArtifacts/APIC_Reusability/blob/main/dynamic-basic-auth-udp.yaml).  
+### How the dynamic-basic-auth-udp is created  
+1. From the polcies section of the APIM, toggle the Source icon on the top right section of the policy section to get to the API yaml code.
+2. Copy the desired policies from the API yaml code and past it into the UDP yaml file. The udp file is created using the IBM APIC Documentation [Defining, packaging, and publishing a catalog-scoped policy for the API Gateway](https://www.ibm.com/docs/en/api-connect/10.0.5.x_lts?topic=dppcspag-structure-catalog-scoped-user-defined-policy-yaml-file)  
+3. Zip up the policy as shown in the diagram below and upload to the catalog.
 
+
+![image](https://github.com/ibmArtifacts/APIC_Reusability/assets/66093865/bb8e2001-b673-4e3c-b0fb-b42d5eeb70fe)  
 
 Here is another sample UDP: https://github.com/ibmArtifacts/custom-jwt-invoke  
 
